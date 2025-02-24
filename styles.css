@@ -1,1 +1,132 @@
+/* Subtle background color for the body */
+.body-class {
+    background-color: #f4f4f4; /* Light gray */
+    color: #333; /* Dark gray for text */
+    font-family: Arial, sans-serif; /* Clear, readable font */
+    font-size: 16px; /* Adequate text size */
+}
+
+/* Header styling with contrasting colors */
+.header-class {
+    background-color: #333; /* Dark background */
+    color: #fff; /* White text for contrast */
+    padding: 20px;
+    text-align: center;
+}
+
+/* Navigation bar styling */
+.nav-class {
+    background-color: #444; /* Slightly lighter than header */
+    color: #fff; /* White text */
+    padding: 10px;
+}
+
+/* Active page link bold */
+.nav-class a.active {
+    font-weight: bold;
+    color: #ffcc00; /* Highlight color for active link */
+}
+
+/* Distinct colors for heading classes */
+.title-class {
+    color: #0066cc; /* Blue for main titles */
+    font-size: 2em; /* Larger font size */
+}
+
+.section-title-class {
+    color: #009933; /* Green for section titles */
+    font-size: 1.5em; /* Slightly smaller than main title */
+}
+
+/* Text color for better contrast */
+.text-class {
+    color: #333; /* Dark gray for readability */
+}
+
+/* Image styling */
+.image-class {
+    border: 5px solid #ccc; /* Light gray border */
+    border-radius: 8px; /* Rounded corners */
+    max-width: 100%; /* Ensure images are responsive */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Form and button styling */
+.form-class input, .form-class textarea {
+    background-color: #fff; /* White background */
+    color: #333; /* Dark gray text */
+    border: 1px solid #ccc; /* Light gray border */
+    padding: 10px;
+    margin: 5px 0;
+    width: 100%; /* Full width */
+    box-sizing: border-box; /* Include padding in width */
+}
+
+.button-class {
+    background-color: #0066cc; /* Blue background */
+    color: #fff; /* White text */
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.button-class:hover {
+    background-color: #004c99; /* Darker blue on hover */
+}
+
+/* Footer styling */
+.footer-class {
+    background-color: #222; /* Dark background */
+    color: #fff; /* White text */
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+<img src="example.jpg" alt="Descriptive text about the image" class="image-class">
+
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+    .header-class, .nav-class, .footer-class {
+        padding: 10px; /* Reduce padding on smaller screens */
+    }
+
+    .title-class {
+        font-size: 1.5em; /* Smaller font size for titles */
+    }
+
+    .section-title-class {
+        font-size: 1.2em; /* Smaller font size for section titles */
+    }
+
+    .form-class input, .form-class textarea {
+        padding: 8px; /* Smaller padding for form fields */
+    }
+
+    .button-class {
+        padding: 8px 16px; /* Smaller padding for buttons */
+    }
+}
+
+@media (max-width: 480px) {
+    .body-class {
+        font-size: 14px; /* Smaller font size for body text */
+    }
+
+    .title-class {
+        font-size: 1.2em; /* Even smaller font size for titles */
+    }
+
+    .section-title-class {
+        font-size: 1em; /* Even smaller font size for section titles */
+    }
+
+    .nav-class a {
+        display: block; /* Stack navigation links vertically */
+        margin: 5px 0;
+    }
+}
+
 
